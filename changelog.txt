@@ -1,2 +1,6 @@
 (5/22/2018)
  - initial build
+
+(5/23/2018)
+ - renamed 'len' to 'length' to avoid built-in function confusion
+ - moved 'eCof' and 'length' out of ConcScan.conc, now are function parameters
