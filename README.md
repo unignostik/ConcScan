@@ -8,9 +8,6 @@ calculates and returns light absorbance array for a given image
 ### ConcScan.conc
 calculates and returns concentration array for a given absorbance array
 
-### ConcScan.conc
-calculates and returns concentration array for a given absorbance array
-
 ### ConcScan.plotData
 given two arrays, plot them against each other and display 
 
