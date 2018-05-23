@@ -20,13 +20,12 @@ class ConcScan:
             pcentArr.append(2-numpy.log10(100*float(val[0]/255)))
         return pcentArr  # return array
 
-    def conc(self, data):  # calculate and return concentration array for a given absorbance array
-        eCof = 15.2  # molar extension coefficient (L*M^-1*cm^-1)
-        len = 1  # path length (cm)
+    def conc(self, data, eCof, length):  # calculate and return concentration array for a given absorbance array
+
         # iterate through each data value, calculate and store concentration in 'concArr'
         concArr = []
         for val in data:
-            c = val/eCof*len  # concentration (M)
+            c = val/eCof*length  # concentration (M)
             concArr.append(c)
         return concArr  # return array
 
